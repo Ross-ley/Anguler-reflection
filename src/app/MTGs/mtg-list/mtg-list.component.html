@@ -1,0 +1,63 @@
+<div class="container">
+  <h2 class="header">Magic The Gathering</h2>
+  <div>
+    <h3>
+        Welcome to the Magic the Gathering Page 
+    </h3>
+    <p>
+      The random button will give a random result of a card information.
+    </p>
+    <button (click)="performSearch(searchTerm); displayVis()" class="btn btn-MTG">
+        Randomizer
+    </button>
+  <div class="key" id="key">
+    <ul>
+        Key:
+      <li>
+        X: number of mana you can put into it
+      </li>
+      <li>
+        R: Red
+      </li>
+      <li>
+        W: White
+      </li>
+      <li>
+        B: Black
+      </li>
+      <li>
+        U: Blue
+      </li>
+      <li>
+        G: Green
+      </li>
+      <li>
+        T: Tap
+      </li>
+    </ul>
+  </div>
+  <div class="cardlayout">  
+    <br>
+    
+    <div class="cover" id="cover">
+        <img src="{{mtg.card.imageUrl}}">
+        <p class="name">{{mtg.card.name}}</p>
+        <p class="text">{{mtg.card.text}}</p>
+        <p class="manaCost">{{mtg.card.manaCost}}</p>
+        <p class="cmc">{{mtg.card.cmc}}</p>
+        <p class="colors">{{mtg.card.colors}}</p>
+        <p class="colorIdentity">{{mtg.card.colorIdentity}}</p>
+        <p class="type">{{mtg.card.type}}</p>
+        <p class="types">{{mtg.card.types}}</p>
+        <p class="subtypes">{{mtg.card.subtypes}}</p>
+        <p class="rarity">{{mtg.card.rarity}}</p>
+        <p class="set">{{mtg.card.set}}</p>
+        <p class="setName">{{mtg.card.setName}}</p>
+        <p class="artist">{{mtg.card.artist}}</p>
+        <p class="originalText">{{mtg.card.originalText}}</p>
+        <p class="originalType">{{mtg.card.originalType}}</p>
+    </div>
+  </div>
+</div>
+</div>
+

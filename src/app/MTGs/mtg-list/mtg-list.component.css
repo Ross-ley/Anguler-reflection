@@ -1,0 +1,109 @@
+.key{
+    border: 3px solid black;
+    position: absolute;
+    top: 120px;
+    right: 190px;
+    background-color: aliceblue;
+    padding-right: 10px;
+    display: none;
+    border-radius: 2.5rem
+}
+
+.text::before{
+    content: 'Effect/text - '
+}
+.name::before{
+    content: 'Name of card - '
+}
+.manaCost::before{
+    content: 'Mana cost - '
+}
+.cmc::before{
+    content: 'Converted mana cost - '
+}
+.colors::before{
+    content: 'color - '
+}
+.colorIdentity::before{
+    content: 'Color identity - '
+}
+.type::before{
+    content: 'Type of card - '
+}
+.types::before{
+    content: 'Type -'
+}
+.subtypes::before{
+    content: 'Subtype - '
+}
+.rarity::before{
+    content: 'Rarity - '
+}
+.set::before{
+    content: 'Set - '
+}
+.setName::before{
+    content: 'Set Name - '
+}
+.artist::before{
+    content: 'Artist - '
+}
+.originalText::before{
+    content: 'Original effect/text- '
+}
+.originalType::before{
+    content: 'Original type of card- '
+}
+img{
+    float: right;
+    width: 300px;
+    box-shadow: -18px 16px 70px;
+    border-radius: 25px;
+    align-self: center;
+}
+.cover{
+    border: 1px solid black;
+    margin-top: 60px;
+    border: 1px solid #ccc; 
+    position: relative; 
+    background-color: #9AD4D6;
+    display: none;
+    margin-bottom: 20px;
+    border-radius: 1.5rem;
+    flex-direction: column;
+}
+.btn-MTG{
+   width: 6rem;
+   height: 30px;
+}
+.cover p {
+    padding-left: 10px;
+    width: 52%;
+}
+@media (max-width:1170px) {
+    #key{
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 1030px){
+    .cover{
+        margin-top: 0;
+    }
+    img {
+       align-self: center;
+    }
+}
+@media (max-width: 750px){
+    img{
+        float: none;
+        box-shadow: 0px 10px 30px;
+        align-self: center;
+    }
+    .cover p {
+        padding-left: 10px;
+        width: 90%;
+    }
+}

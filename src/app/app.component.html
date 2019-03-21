@@ -1,0 +1,16 @@
+<h1 class="header">
+  <a routerLink="Home" (click)="selectedItem = 'item1'" class="title">{{title}}</a>
+</h1>
+  <div class="nav-bar">
+      <button routerLink="Home" class="link first" [ngClass]="{'active': selectedItem === 'item1'}" (click)="selectedItem = 'item1'">Home</button>
+      <button routerLink="PokemonTCG" class="link second" [ngClass]="{'active': selectedItem === 'item2'}" (click)="selectedItem = 'item2'">Pokemon TCG</button>
+      <button routerLink="MagicTheGathing" class="link third" [ngClass]="{'active': selectedItem === 'item3'}" (click)="selectedItem = 'item3'">Magic The Gathering</button>
+  </div>
+ <div class="container">
+    <router-outlet></router-outlet>
+ </div>
+ <footer>
+   <div class="footText">
+      <p>This site was made using typescript.</p><p>By Ross-ley Bunn</p>
+   </div>
+ </footer>

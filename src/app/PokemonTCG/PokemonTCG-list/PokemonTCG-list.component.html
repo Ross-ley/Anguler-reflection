@@ -1,0 +1,74 @@
+<div>
+  <h2>
+      Pokemon TCG page.
+  </h2>
+  <div class="container windowHig">
+    <h3>
+        Welcome to the Pokemon TCG page.
+    </h3>
+    <p>
+        Here you will see a search bar. <br> To use this search bar you will need to enter a Pokemon's name or trainer card. 
+    </p>
+
+    <!-- below is a search function which calls the api search -->
+    <div class="space">
+        <input name="title" type="search"  #searchTerm class="search">
+
+        <button (click)="performSearch(searchTerm)" class="btn-p btn">Search</button>
+    </div>
+    <br>
+  <!----------------------------------------------------------------->
+    <div >
+      <h1 id="notFound"></h1>
+      <div *ngFor="let c of pokemontcg" class="cover">
+          <img src="{{c.imageUrl}}" class="img">
+          <p class="name">
+            Name - {{c.name}}
+          </p>
+          <p>
+            Artist Name - {{c.artist}}
+          </p>
+          <div class="section1">
+          Moves -
+          <div *ngFor= "let tx of c.attacks">
+              <p class="moves">
+                {{tx.name}} - {{tx.damage}} - {{tx.text}}
+              </p>
+          </div>
+          </div>
+          <div class="section2">
+            <p>Hit Points - {{c.hp}}</p>
+            <p>Set id - {{c.id}}</p>
+            <p>Pokedex Number - {{c.nationalPokedexNumber}}</p>
+            <p>Number in set - {{c.number}}</p>
+            <p> Rarity - {{c.rarity}}</p>
+          </div>
+          <div class="sections">  
+            Retreat cost - {{c.convertedRetreatCost}}
+        </div>
+
+          <div class="sections">
+            <div *ngFor= "let r of c.resistances">
+              <div>Resistances - {{r.type}} {{r.value}} damage</div>
+            </div>
+              
+              <div *ngFor= "let w of c.weaknesses">
+                <div>Weaknesses - {{w.type}} {{w.value}} damage</div>
+              </div>
+          </div>
+          <div class="sections">
+            Series - {{c.series}}
+            <br>
+            Set - {{c.set}} 
+            <br>
+            Set Code - {{c.setCode}}
+            <br>
+            Type of card - {{c.subtype}} - {{c.supertype}}
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+

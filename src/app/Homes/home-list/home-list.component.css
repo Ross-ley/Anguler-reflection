@@ -1,0 +1,63 @@
+.intro{
+    font-size: 20px;
+    width: 70%;
+}
+.test{
+    border: 1px solid black;
+}
+
+.setup::before{
+    content: 'Setup - ';
+}
+.punchline::before{
+    content: 'Punchline - ';
+}
+.rightside{
+    border: 1px solid black;
+    margin-left: 20px; 
+    width: 500px;
+    background-color: #9AD4D6;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.rightside p {
+    padding-left: 15px;
+}
+.flexy{
+    display: flex;
+}
+.end{
+    width: 70%;
+}
+.btn-h{
+    width: 80%;
+    align-self: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.link{
+    font-weight: 800;
+}
+@media( max-width: 800px){
+    .flexy{
+        display: block;
+    }
+    .rightside{
+        width: auto;
+        margin: auto;
+    }
+    .intro,
+    .end{
+        width: 100%;
+    }
+    .header{
+        font-size: 1rem
+    }
+
+}
