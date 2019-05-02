@@ -11,13 +11,12 @@ import { MTGListComponent } from './MTGs/mtg-list/mtg-list.component';
 import { PokemonTCGListComponent } from './PokemonTCG/PokemonTCG-list/PokemonTCG-list.component';
 import { HomeListComponent } from './Homes/Home-list/Home-list.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     MTGListComponent,
     HomeListComponent,
-    PokemonTCGListComponent,
+    PokemonTCGListComponent
   ],
   imports: [
     BrowserModule,

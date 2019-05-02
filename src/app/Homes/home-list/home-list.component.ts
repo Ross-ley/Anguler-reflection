@@ -28,5 +28,12 @@ export class HomeListComponent {
     });
   }
 
+  displayVis() {
+    document.getElementById('rightside').style.display = 'flex';
+    document.getElementById('btn-h').style.width = '80%';
+    document.getElementById('btn-h').style.height = 'auto';
+
+  }
+
 
 }

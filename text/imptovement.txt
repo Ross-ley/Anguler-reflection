@@ -124,3 +124,5 @@ Ryan:
 - add a link to home on website name /*done*/
 - x2 suggest previous/future versions of searched pokemon (evolution history) /*na as api dosnt alow it*/
 - suggest pokemon as they are typing out their search to help newer people to pokemon /*na*/
+
+-----------------------------------------------------------------------------------------

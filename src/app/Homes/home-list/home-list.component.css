@@ -6,22 +6,28 @@
     border: 1px solid black;
 }
 
-.setup::before{
+
+#setup::before{
     content: 'Setup - ';
 }
-.punchline::before{
+#punchline::before{
     content: 'Punchline - ';
 }
-.rightside{
+#rightside{
     border: 1px solid black;
-    margin-left: 20px; 
-    width: 500px;
+    width: 500px; 
     background-color: #9AD4D6;
     border-radius: 2.5rem;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
-.rightside p {
+#alinment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#rightside p {
     padding-left: 15px;
 }
 .flexy{
@@ -30,9 +36,10 @@
 .end{
     width: 70%;
 }
-.btn-h{
-    width: 80%;
+#btn-h{
+    width: 200px;
     align-self: center;
+    height: 50px;
 }
 a{
     color: black;
@@ -44,13 +51,19 @@ a:hover{
 .link{
     font-weight: 800;
 }
-@media( max-width: 800px){
+@media(max-width: 1010px) and (min-width: 930px){
+    #alinment{
+        width: 280%;
+        height: auto;
+    }
+}
+@media( max-width: 930px){
     .flexy{
         display: block;
     }
-    .rightside{
-        width: auto;
+    #rightside{
         margin: auto;
+        width:100%
     }
     .intro,
     .end{
@@ -59,5 +72,16 @@ a:hover{
     .header{
         font-size: 1rem
     }
+    #alinment{
+        width: auto;
+        height: auto;
+    }
+
+}
+@media( max-width: 600px){
+    #rightside{
+        width: auto;
+    }
+
 
 }

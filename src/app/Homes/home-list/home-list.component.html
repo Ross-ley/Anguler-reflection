@@ -25,14 +25,16 @@
             </p>
         </div>
         
-        <div class="rightside">
-            <button (click)="performSearch(searchTerm)" class="btn btn-h">Random joke</button>
-            <p class="setup">
-                {{joke.setup}}
-            </p>
-            <p class="punchline">
-                {{joke.punchline}}
-            </p>
+        <div id="alinment">
+            <button (click)="performSearch(searchTerm); displayVis()" class="btn" id="btn-h">Random joke</button>
+            <div id="rightside">
+                <p id="setup">
+                    {{joke.setup}}
+                </p>
+                <p id="punchline">
+                    {{joke.punchline}}
+                </p>
+            </div>
         </div>
 
     </div>    

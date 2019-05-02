@@ -1,6 +1,5 @@
 .link {
     cursor: pointer;
-    width: 400px;
     border: none;
     background-color: #8fc0a9;
     font-size: 20px;
@@ -9,9 +8,15 @@
 .second,
 .third{
     border-right: 1px solid black;
+    height: 100%;
+    width: 100%;
 }
 .first{
     border-left: 1px solid black;
+}
+.timer{
+    display: flex;
+    width: 80%;
 }
 .link:hover{
     background-color:#9AD4D6

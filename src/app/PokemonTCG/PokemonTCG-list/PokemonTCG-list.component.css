@@ -12,6 +12,9 @@
 .cover p {
     padding-left: 10px;
 }
+.name{
+    padding-top: 15px;
+}
 .img{
     float: right;
     box-shadow: -13px 18px 30px;
